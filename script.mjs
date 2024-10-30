@@ -41,7 +41,7 @@ const mostrarProducte = (object) => {
   }
 };
 
-// mostrarProducte(producte);
+mostrarProducte(producte);
 
 //Tasca 3
 
@@ -73,6 +73,7 @@ const productes = [
     },
   },
 ];
+
 const mostrarProductes = (object) => {
   for (const property in object) {
     if (typeof object[property === "object"]) {
@@ -94,4 +95,4 @@ const mostrarProducteID = (element, id) => {
     : console.log("Not found");
 };
 
-mostrarProducteID(productes, 2);
+// mostrarProducteID(productes, 2);
