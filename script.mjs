@@ -15,11 +15,29 @@ const llegirProductes = () => {
 // llegirProductes();
 
 //Tasca 2
-const producte = { a: 1, b: 2, c: 3 };
+const producte = {
+  id: 2,
+  nom: "Telèfon intel·ligent",
+  marca: "Samsung",
+  categoria: "Electrònica",
+  preu: 500,
+  disponible: false,
+  caracteristiques: {
+    pantalla: "6.4 polzades",
+    càmera: "48MP",
+    bateria: "4000mAh",
+  },
+};
 
 const mostrarProducte = (object) => {
   for (const property in object) {
-    console.log(`${property}: ${object[property]}`);
+    if (typeof object[property === "object"]) {
+      for (const atribut in object[property]) {
+        console.log(`${atribut}: ${object[property][atribut]}`);
+      }
+    } else {
+      console.log(`${property}: ${object[property]}`);
+    }
   }
 };
 
