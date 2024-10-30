@@ -58,6 +58,8 @@ const productes = [
       càmera: "48MP",
       bateria: "4000mAh",
     },
+  },
+  {
     id: 2,
     nom: "Telèfon intel·ligent",
     marca: "Iphone",
@@ -72,14 +74,22 @@ const productes = [
   },
 ];
 const mostrarProductes = (object) => {
-  object.map(mostrarProducte(object));
+  for (const property in object) {
+    if (typeof object[property === "object"]) {
+      for (const atribut in object[property]) {
+        console.log(`${atribut}: ${object[property][atribut]}`);
+      }
+    } else {
+      console.log(object.map(mostrarProductes(object)));
+    }
+  }
 };
 
 // mostrarProductes(productes);
 //Tasca 4
 
 const mostrarProducteID = (element, id) => {
-  element.filter((c) => c.id == id)
+  element.filter((c) => c.id === id)
     ? console.log(element)
     : console.log("Not found");
 };
