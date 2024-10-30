@@ -47,7 +47,7 @@ const mostrarProducte = (object) => {
 
 const productes = [
   {
-    id: 2,
+    id: 1,
     nom: "Telèfon intel·ligent",
     marca: "Samsung",
     categoria: "Electrònica",
@@ -58,16 +58,16 @@ const productes = [
       càmera: "48MP",
       bateria: "4000mAh",
     },
-    id: 3,
+    id: 2,
     nom: "Telèfon intel·ligent",
-    marca: "Samsung",
-    categoria: "Electrònica",
-    preu: 500,
-    disponible: false,
+    marca: "Iphone",
+    categoria: "X",
+    preu: 800,
+    disponible: true,
     caracteristiques: {
-      pantalla: "6.4 polzades",
-      càmera: "48MP",
-      bateria: "4000mAh",
+      pantalla: "6.0 polzades",
+      càmera: "50MP",
+      bateria: "5000mAh",
     },
   },
 ];
