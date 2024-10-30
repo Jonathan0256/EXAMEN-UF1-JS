@@ -75,7 +75,13 @@ const mostrarProductes = (object) => {
   object.map(mostrarProducte(object));
 };
 
-mostrarProductes(productes);
+// mostrarProductes(productes);
 //Tasca 4
 
-const mostrarProducteID = (productes, id) => {};
+const mostrarProducteID = (element, id) => {
+  element.filter((c) => c.id == id)
+    ? console.log(element)
+    : console.log("Not found");
+};
+
+mostrarProducteID(productes, 2);
