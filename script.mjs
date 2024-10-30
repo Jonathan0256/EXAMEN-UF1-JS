@@ -41,4 +41,41 @@ const mostrarProducte = (object) => {
   }
 };
 
-mostrarProducte(producte);
+// mostrarProducte(producte);
+
+//Tasca 3
+
+const productes = [
+  {
+    id: 2,
+    nom: "Telèfon intel·ligent",
+    marca: "Samsung",
+    categoria: "Electrònica",
+    preu: 500,
+    disponible: false,
+    caracteristiques: {
+      pantalla: "6.4 polzades",
+      càmera: "48MP",
+      bateria: "4000mAh",
+    },
+    id: 3,
+    nom: "Telèfon intel·ligent",
+    marca: "Samsung",
+    categoria: "Electrònica",
+    preu: 500,
+    disponible: false,
+    caracteristiques: {
+      pantalla: "6.4 polzades",
+      càmera: "48MP",
+      bateria: "4000mAh",
+    },
+  },
+];
+const mostrarProductes = (object) => {
+  object.map(mostrarProducte(object));
+};
+
+mostrarProductes(productes);
+//Tasca 4
+
+const mostrarProducteID = (productes, id) => {};
