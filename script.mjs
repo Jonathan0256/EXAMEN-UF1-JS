@@ -15,4 +15,12 @@ const llegirProductes = () => {
 // llegirProductes();
 
 //Tasca 2
-const mostrarProducte = (producte) => {};
+const producte = { a: 1, b: 2, c: 3 };
+
+const mostrarProducte = (object) => {
+  for (const property in object) {
+    console.log(`${property}: ${object[property]}`);
+  }
+};
+
+mostrarProducte(producte);
